@@ -38,3 +38,23 @@ module.exports.getWatchlist = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+module.exports.removeFromWatchlist = async (req, res) => {
+  const userId = req.user.id;
+  const movieId = req.params.id;
+
+  try {
+    const user = await User.findById(userId);
+    const index = user.watchlist.indexOf(movieId);
+
+    if (index === -1) {
+      return res.status(404).json({ message: "Movie not found in watchlist" });
+    }
+
+    user.watchlist.splice(index, 1);
+    await user.save();
+
+    res.status(200).json({ message: "Removed from watchlist", movieId });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
