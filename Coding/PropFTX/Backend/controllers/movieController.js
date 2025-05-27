@@ -16,7 +16,7 @@ module.exports.addToWatchlist = async (req, res) => {
 
   try {
     const user = await User.findById(userId);
-    if (user.watchlist.includes(movieId)) {
+    if (user.watchlist.includes(movieId)) {        //it is here to remove duplicacy
       return res.status(400).json({ message: "Movie already in watchlist" });
     }
     user.watchlist.push(movieId);
