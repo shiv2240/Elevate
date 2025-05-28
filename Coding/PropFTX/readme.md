@@ -12,6 +12,13 @@ A minimal full-stack Movie Listing application built with **React**, **Node.js**
 
 ---
 
+# Test-User Credentials
+
+username - testuser
+password - testpassword
+
+---
+
 ## Overview
 
 This project is a simple movie listing platform that allows users to:
