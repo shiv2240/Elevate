@@ -6,6 +6,10 @@ A minimal full-stack Movie Listing application built with **React**, **Node.js**
 
 🔗 **Backend API**: [https://propftx-f3ti.onrender.com](https://propftx-f3ti.onrender.com)
 
+🔗 **Presentation Video**: [https://youtu.be/cyF5QS5eHlg?si=kkGXxJr5tfHZXiVy](https://youtu.be/cyF5QS5eHlg?si=kkGXxJr5tfHZXiVy)
+
+🔗 **Video download link**: [https://drive.google.com/file/d/1UG8k2zWhyfF0szc0paz2BFavc3kRymPx/view?usp=sharing](https://drive.google.com/file/d/1UG8k2zWhyfF0szc0paz2BFavc3kRymPx/view?usp=sharing)
+
 ---
 
 ## Overview

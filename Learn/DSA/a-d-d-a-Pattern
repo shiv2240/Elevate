@@ -1,0 +1,20 @@
+function generateSquarePattern(n) {
+  for (let i = 1; i <= n; i++) {
+    let row = '';
+    for (let j = 1; j <= n; j++) {
+      if (i === 1) {
+        row += j + ' ';
+      } else if (i === n) {
+        row += (n - j + 1) + ' ';
+      } else {
+
+        if (j === 1) row += i + ' ';
+        else if (j === n) row += (n - i + 1) + ' ';
+        else row += '  ';
+      }
+    }
+    console.log(row.trim());
+  }
+}
+
+generateSquarePattern(6);
