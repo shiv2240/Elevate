@@ -3,18 +3,18 @@ function generateSquarePattern(n) {
     let row = '';
     for (let j = 1; j <= n; j++) {
       if (i === 1) {
-        row += j + ' ';
+        row += j + '\t';
       } else if (i === n) {
-        row += (n - j + 1) + ' ';
+        row += (n - j + 1) + '\t';
       } else {
 
-        if (j === 1) row += i + ' ';
-        else if (j === n) row += (n - i + 1) + ' ';
-        else row += '  ';
+        if (j === 1) row += i + '\t';
+        else if (j === n) row += (n - i + 1) + '\t';
+        else row += '\t';
       }
     }
     console.log(row.trim());
   }
 }
 
-generateSquarePattern(6);
+generateSquarePattern(10);
