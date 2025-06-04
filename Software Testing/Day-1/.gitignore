@@ -1,0 +1,36 @@
+# Cypress default output folders
+cypress/videos/
+cypress/screenshots/
+
+# Cypress cache
+.cypress/
+
+# Node modules (standard for any Node project)
+node_modules/
+
+# Environment files (keep secrets out of version control)
+.env
+.env.* 
+
+# Ignore all JavaScript files inside Cypress folder
+cypress/**/*.js
+
+
+# Ignore TypeScript files inside Cypress
+cypress/**/*.ts
+
+
+# Log files
+*.log
+
+# OS and editor specific
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Coverage reports (if using code coverage tools like nyc or cypress-coverage)
+coverage/
+.nyc_output/
